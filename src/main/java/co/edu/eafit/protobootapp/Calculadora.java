@@ -10,7 +10,7 @@ public class Calculadora {
         return numero * numero * numero;
     }
 
-    public Double Add(Double numero1, Double numero2) {
+    public Double add(Double numero1, Double numero2) {
         return numero2 + numero2;
     }
 }
