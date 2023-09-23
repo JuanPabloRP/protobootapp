@@ -50,6 +50,6 @@ public class ProtobootappApplication {
     @GetMapping("/add")
     public String add(@RequestParam(value = "numero1", defaultValue = "0") Double numero1, @RequestParam(value = "numero2", defaultValue = "0") Double numero2) {
         this.calculadora = new Calculadora();
-        return String.format("El add de %d y %d es %d", numero1, numero2, this.calculadora.Add(numero1, numero2));
+        return String.format("El add de %d y %d es %d", numero1, numero2, this.calculadora.add(numero1, numero2));
     }
 }
