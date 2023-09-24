@@ -52,4 +52,11 @@ public class ProtobootappApplication {
         this.calculadora = new Calculadora();
         return String.format("El add de %d y %d es %d", numero1, numero2, this.calculadora.add(numero1, numero2));
     }
+
+     //Se ejecuta con http://localhost:8080/cubo o http://localhost:8080/cubo?numero=5
+    @GetMapping("/resta")
+    public String resta(@RequestParam(value = "numero1", defaultValue = "0") Double numero1, @RequestParam(value = "numero2", defaultValue = "0") Double numero2) {
+        this.calculadora = new Calculadora();
+        return String.format("La resta es %f de %f - %f", this.calculadora.resta(numero1, numero2), numero1, numero2);
+    }
 }
