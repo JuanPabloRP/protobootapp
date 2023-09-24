@@ -11,6 +11,10 @@ public class Calculadora {
     }
 
     public Double add(Double numero1, Double numero2) {
-        return numero2 + numero2;
+        return numero1 + numero2;
+    }
+
+    public Double resta(Double numero1, Double numero2) {
+        return numero1 - numero2;
     }
 }
